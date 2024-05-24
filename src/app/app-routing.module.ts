@@ -22,8 +22,16 @@ const routes: Routes = [
     // ],
   },
   {
+    path: 'product',
+    component: DashboardComponent,
+    loadChildren: () =>
+      import('./product/product-routing.module').then(
+        (p) => p.ProductRoutingModule
+      ),
+  },
+  {
     path: 'dashboard',
-
+    component: DashboardComponent,
     canActivate: [AuthGuard],
     children: [
       // {
@@ -34,8 +42,6 @@ const routes: Routes = [
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full',
-        loadChildren: () =>
-          import('./product/product.module').then((m) => m.ProductModule),
       },
     ],
   },

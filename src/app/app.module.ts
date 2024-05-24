@@ -13,6 +13,7 @@ import { ProductComponent } from './component/product/product.component';
 import { ProductModule } from './product/product.module';
 // import { ChartComponent } from './core/chart/chart.component';
 
+console.log('i am from app module');
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +24,7 @@ import { ProductModule } from './product/product.module';
     SidebarComponent,
     ProductComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    ProductModule,
-  ],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
