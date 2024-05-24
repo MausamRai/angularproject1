@@ -1,0 +1,7 @@
+.fit-screen-image {
+  width: 100vw;
+  justify-content: flex-end;
+  display: flex;
+  height: 100vh;
+  object-fit: cover; 
+}

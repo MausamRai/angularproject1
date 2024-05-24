@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #343a40;
+  padding-left: 100px; 
+  padding-right: 100px;
+}
+
+.navbar-brand {
+  font-size: 24px; 
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.btn-profile,
+.btn-signout {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff; 
+}
+
+.btn-profile:hover,
+.btn-signout:hover {
+  background-color: #0056b3;
+}
